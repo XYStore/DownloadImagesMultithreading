@@ -56,13 +56,15 @@ typedef void(^CompleteHandler)(BOOL isSuccessful);
     NSLog(@"self.image1开始下载");
     dispatch_group_async(group, queue, ^{
 //        [NSThread sleepForTimeInterval:2.0];
-        self.image1 = [self imageWithURLString:@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3505995965,2781827203&fm=27&gp=0.jpg"];
+        NSLog(@"%@",NSThread.currentThread);
+        self.image1 = [self imageWithURLString:@"http://pic4.nipic.com/20091217/3885730_124701000519_2.jpg"];
         NSLog(@"self.image1下载完成,%@",self.image1);
     });
     
     NSLog(@"self.image2开始下载");
     dispatch_group_async(group, queue, ^{
 //        [NSThread sleepForTimeInterval:2.0];
+        NSLog(@"%@",NSThread.currentThread);
         self.image2 = [self imageWithURLString:@"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3505995965,2781827203&fm=27&gp=0.jpg"];
         NSLog(@"self.image2下载完成,%@",self.image2);
         
@@ -71,6 +73,7 @@ typedef void(^CompleteHandler)(BOOL isSuccessful);
     NSLog(@"self.image3开始下载");
     dispatch_group_async(group, queue, ^{
 //        [NSThread sleepForTimeInterval:2.0];
+        NSLog(@"%@",NSThread.currentThread);
         self.image3 = [self imageWithURLString:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1573503644,1731902687&fm=27&gp=0.jpg"];
         NSLog(@"self.image3下载完成,%@",self.image3);
     });
