@@ -13,6 +13,9 @@
 		600282961FBD7655007F33B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600282951FBD7655007F33B6 /* Assets.xcassets */; };
 		600282991FBD7655007F33B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600282971FBD7655007F33B6 /* LaunchScreen.storyboard */; };
 		6002829C1FBD7655007F33B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6002829B1FBD7655007F33B6 /* main.m */; };
+		60619BA61FC403900072ECE1 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 60619BA51FC403900072ECE1 /* Request.m */; };
+		60619BA91FC40DF50072ECE1 /* XYMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60619BA81FC40DF50072ECE1 /* XYMenuTableViewController.m */; };
+		60619BAC1FC419E80072ECE1 /* XYAsyncRequestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60619BAB1FC419E80072ECE1 /* XYAsyncRequestVC.m */; };
 		B4A0BA00F9E6C9EB7808C8B5 /* libPods-DownloadImagesMultithreading.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE76B92DCF4FEBC5A9281F5 /* libPods-DownloadImagesMultithreading.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,12 @@
 		600282981FBD7655007F33B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6002829A1FBD7655007F33B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6002829B1FBD7655007F33B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60619BA41FC403900072ECE1 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		60619BA51FC403900072ECE1 /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		60619BA71FC40DF50072ECE1 /* XYMenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYMenuTableViewController.h; sourceTree = "<group>"; };
+		60619BA81FC40DF50072ECE1 /* XYMenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYMenuTableViewController.m; sourceTree = "<group>"; };
+		60619BAA1FC419E80072ECE1 /* XYAsyncRequestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAsyncRequestVC.h; sourceTree = "<group>"; };
+		60619BAB1FC419E80072ECE1 /* XYAsyncRequestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAsyncRequestVC.m; sourceTree = "<group>"; };
 		BDA3586208A515A89240F1AD /* Pods-DownloadImagesMultithreading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownloadImagesMultithreading.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownloadImagesMultithreading/Pods-DownloadImagesMultithreading.release.xcconfig"; sourceTree = "<group>"; };
 		BEE76B92DCF4FEBC5A9281F5 /* libPods-DownloadImagesMultithreading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownloadImagesMultithreading.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +83,12 @@
 				600282971FBD7655007F33B6 /* LaunchScreen.storyboard */,
 				6002829A1FBD7655007F33B6 /* Info.plist */,
 				6002829B1FBD7655007F33B6 /* main.m */,
+				60619BA41FC403900072ECE1 /* Request.h */,
+				60619BA51FC403900072ECE1 /* Request.m */,
+				60619BA71FC40DF50072ECE1 /* XYMenuTableViewController.h */,
+				60619BA81FC40DF50072ECE1 /* XYMenuTableViewController.m */,
+				60619BAA1FC419E80072ECE1 /* XYAsyncRequestVC.h */,
+				60619BAB1FC419E80072ECE1 /* XYAsyncRequestVC.m */,
 			);
 			path = DownloadImagesMultithreading;
 			sourceTree = "<group>";
@@ -217,9 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60619BAC1FC419E80072ECE1 /* XYAsyncRequestVC.m in Sources */,
 				600282911FBD7655007F33B6 /* ViewController.m in Sources */,
+				60619BA61FC403900072ECE1 /* Request.m in Sources */,
 				6002829C1FBD7655007F33B6 /* main.m in Sources */,
 				6002828E1FBD7655007F33B6 /* AppDelegate.m in Sources */,
+				60619BA91FC40DF50072ECE1 /* XYMenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@
 
 #import "ViewController.h"
 #import <FTIndicator/FTIndicator.h>
+#import "Request.h"
 typedef void(^CompleteHandler)(BOOL isSuccessful);
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -40,6 +41,8 @@ typedef void(^CompleteHandler)(BOOL isSuccessful);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self loadAsyncRequest];
 }
 
 -(UIImage *)imageWithURLString:(NSString *)urlString{
@@ -48,6 +51,7 @@ typedef void(^CompleteHandler)(BOOL isSuccessful);
     return [UIImage imageWithData:data];
 }
 
+//异步执行同步任务
 -(void)loadImagesWithCompleteHandler:(CompleteHandler)completeHandler {
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -132,12 +136,15 @@ typedef void(^CompleteHandler)(BOOL isSuccessful);
     self.imageView.image = resultImage;
     
     //释放内存
-    //    CGImageRelease(imgRef1);
-    CGImageRelease(imgRef2);
-    CGImageRelease(imgRef3);
+//    CGImageRelease(imgRef1);
+//    CGImageRelease(imgRef2);
+//    CGImageRelease(imgRef3);
     
     
 }
+
+//group里操作是同步
+
 
 
 @end
